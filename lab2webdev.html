@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaushik's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portfolio of Kaushik Tiwari, a Web Dev student at K.R. Mangalam.">
+</head>
+
+<body>
+
+  <header>
+    <h1>Kaushik's  Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#Main-Content">Main Content</a></li>
+        <li><a href="#About-Me">About Me</a></li>
+        <li><a href="#Projects">My Projects</a></li>
+        <li><a href="#Technical-Skills">Technical Skills</a></li>
+        <li><a href="#Contact-Me">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main id="Main-Content">
+
+  
+    <section id="About-Me">
+      <h2>About Me</h2>
+      <div class="profile-image">
+        <img id="profileImg" src="IMG_20250823_133857_377.jpg" alt="Kaushik's pic" height="150" width="150">
+      </div>
+      <p>
+        Hi. I'm Kaushik tiwari. I am a fresher studying B.Tech CSE with interest in AIML at K.R. Mangalam University 
+        I am just starting my journey in web development and technology.
+      </p>
+    </section>
+
+    <hr>
+
+  
+    <section id="Technical-Skills">
+      <h2>Technical Skills</h2>
+      <table cellpadding="5" cellspacing="5">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>good</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Soft-skills</td>
+            <td>good</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+  
+    <section id="Projects">
+      <h2>My Projects</h2>
+      <div class="project-box">
+        <h3>Project 1</h3>
+        <p>A one-paged portfolio to showcase my bio, skills, and contact details, etc.</p>
+      </div>
+      <div class="project-box">
+        <h3>Project 2</h3>
+        <p>A one-page blog.</p>
+      </div>
+    </section>
+
+    <hr>
+
+  
+    <section id="Contact-Me">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 Kaushik</p>
+  </footer>
+
+  
+  <script>
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
