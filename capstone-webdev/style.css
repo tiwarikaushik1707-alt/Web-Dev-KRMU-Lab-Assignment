@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #222;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    color: #0077ff;
+}
+
+/* Skip link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    left: 10px;
+    top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+    background: #e8f2ff;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0077ff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* About Section */
+.section {
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Courses Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.img {
+    height: 120px;
+    background: #cfe2ff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #0077ff;
+}
+
+/* Contact Form */
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    margin-top: 4px;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a {
+        margin: 5px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+}
