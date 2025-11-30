@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 3rem 8%;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background: #1a1a1a;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #eee;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+#hero {
+    padding: 4rem 8%;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 480px;
+}
+
+.hero-text h1 {
+    font-size: 2.3rem;
+}
+
+.highlight {
+    color: #00aaff;
+}
+
+.animate-text {
+    color: #00aaff;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    animation: fadeText 2s infinite;
+}
+
+@keyframes fadeText {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #00aaff;
+    color: #000;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: #0088cc;
+}
+
+.hero-img img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1.5rem;
+}
+
+
+.about-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: #1c1c1c;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #00aaff;
+    color: #000;
+}
+
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+.project-card {
+    background: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #00aaff;
+    color: #000;
+}
+
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #eee;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: #1a1a1a;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px)   {
+    .hero-box {
+         flex-direction: column;
+        text-align: center;
+    }
+  }
